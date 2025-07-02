@@ -1,0 +1,82 @@
+.music-player-bg {
+  min-height: 100vh;
+  background: linear-gradient(to bottom right, #1e3c72, #2a5298);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.glass-player {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  border-radius: 20px;
+  width: 90%;
+  padding: 2rem;
+  overflow-x: hidden;
+
+}
+
+.music-image {
+  width: 100%;
+  max-width: 300px;
+  border-radius: 12px;
+}
+
+.progress-wrapper {
+  height: 12px;
+  background-color: #ddd;
+  border-radius: 10px;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.progress-bar-custom {
+  height: 100%;
+  background-color: transparent;
+}
+
+.progress-filled {
+  background-color: #3498db;
+  height: 100%;
+  position: relative;
+}
+
+.progress-knob {
+  width: 12px;
+  height: 12px;
+  background-color: white;
+  border-radius: 50%;
+  position: absolute;
+  right: -6px;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+
+/* Right playlist side should not force scroll bar unless needed */
+.playlist-side {
+  max-height: 100%;
+  overflow-y: auto;       /* remove scrollbar unless content overflows */
+}
+
+.playlist-side::-webkit-scrollbar {
+  display: none;          /* Chrome, Safari, Edge */
+}
+
+/* Make sure the entire app does not show unnecessary scroll */
+body, html {
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+/* Optional: Stop scroll from container */
+.music-player-bg {
+  overflow-x: hidden;
+}
+
+/* For the entire page */
+::-webkit-scrollbar {
+  width: 0px;
+  background: transparent;
+}
