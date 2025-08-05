@@ -62,17 +62,11 @@ eslint.config.js
 1. Run the tests: `npm run test`
 2. Use a testing framework like Jest or Cypress to write and run tests for the application.
 
-**Screenshots**
 
-[Insert screenshots of the application]
-
-**API Reference**
-
-[Insert API reference documentation]
 
 **Author**
 
-[Your Name]
+Tushyan Parsana
 
 **License**
 
