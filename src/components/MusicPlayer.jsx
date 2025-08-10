@@ -22,7 +22,7 @@ const MusicPlayer = ({
   const currentVideo = videoList[videoIndex];
 
   const getAudioURL = async (videoId) => {
-    const response = await axios.get(`http://localhost:4000/api/youtube-audio/${videoId}`);
+    const response = await axios.get(`https://music-player-react-sable.vercel.app/api/youtube-audio/${videoId}`);
     return response.data.audioUrl;
   };
 
