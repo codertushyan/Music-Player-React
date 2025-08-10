@@ -5,7 +5,9 @@ const cors = require('cors');
 const app = express();
 const PORT = 4000;
 
-app.use(cors());
+app.use(cors({
+  origin: 'https://music-player-react-sable.vercel.app'
+}));
 
 app.get('/api/youtube-audio/:videoId', async (req, res) => {
   const videoId = req.params.videoId;
